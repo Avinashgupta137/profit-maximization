@@ -1,0 +1,38 @@
+Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    int i ,j,profit;
+    int temp[6] ={};
+   int arry1[] = {0,1,3,5};
+   int arry1profit[] = {1,2,4,8};
+   
+   int size1 = sizeof(arry1)/sizeof(int);
+   int size2 = sizeof(arry1profit)/sizeof(int);
+
+    
+   for(i=0;i<size1;i++){
+     
+       if(arry1[i+1] > arry1[i]){
+           temp[i]  = arry1[i+1] * arry1[i];
+           
+             for(j=0;j<=size2;j++){
+       if(temp[j] > arry1profit[j]){
+          profit = temp[j];
+       }
+   }
+   
+           
+       }else{
+           break;
+       }
+ }
+   
+ 
+
+printf("%d",profit);
+   
+ 
+    
+    return 0;
+}
